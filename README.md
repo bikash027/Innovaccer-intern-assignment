@@ -17,3 +17,6 @@
 <p>
 	It is recommended not to run the server from behind any proxy server but there is an option to set the proxy configuration in lines 10 and 86 of sendMessage.js
 </p>
+<p>
+	To run this application on your computer, clone or download this repository, run npm install and change the database credentials in config/database.js
+</p>
