@@ -1,0 +1,50 @@
+<% include ../partials/top %>
+	<style type="text/css">
+		.container{
+			margin: 100px auto;
+			max-width: 400px;
+		}
+	</style>
+</head>
+<body>
+	<div class='container'>
+		<h3>Visitor Details Form</h3>
+		<p><%= error %></p>
+		<form method="post" action="/">
+		  <div class="form-group">
+		    <!-- <label for="exampleInputEmail1">Email address</label> -->
+		    <input type="text" class="form-control" placeholder="Enter name" name="name" required
+		    >
+		  </div>
+		  <div class="form-group">
+		    <!-- <label for="exampleInputEmail1">Email address</label> -->
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" required >
+		  </div>
+		  <div class="form-group">
+		    <!-- <label for="exampleInputPassword1">Password</label> -->
+		    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone no." name="phone" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="Time1">checkIn time</label>
+		    <input type="time" class="form-control" id="Time1" placeholder="checkIn time" name="checkInTime" required value="<%= checkin %>">
+		  </div>
+		  <div class="form-group">
+		    <label for="Time2">checkOut time (not required)</label>
+		    <input type="time" class="form-control" id="Time2" placeholder="checkOut time" name="checkOutTime">
+		  </div>
+		  <div class="form-group">
+		  	<label>Select host</label>
+			<select name="host" required>
+			    <% hosts.forEach(function(host){ %>
+					<option value="<%= host %>"><%= host %></option>
+				<%})%>
+			 </select>
+		  </div>
+		  <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+		</form>
+	</div>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

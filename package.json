@@ -1,0 +1,22 @@
+{
+  "name": "Innovaccer_intern_assignment",
+  "version": "1.0.0",
+  "description": ".",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bikash",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mysql2": "^2.0.0",
+    "nodemailer": "^6.3.1",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "request": "^2.88.0",
+    "sequelize": "^5.21.2"
+  }
+}
